@@ -22,8 +22,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import springfox..documentation.swagger3.annotation.EnableSwagger3;
 
 @SpringBootApplication
+@EnableSwagger3
 public class ConfigurationClientApplication {
 
 	public static void main(String[] args) {
@@ -35,7 +37,7 @@ public class ConfigurationClientApplication {
 @RestController
 class MessageRestController {
 
-	@Value("${message:Hello default}")
+	@Value("${message:Hello defaultXX}")
 	private String message;
 
 	@RequestMapping("/message")

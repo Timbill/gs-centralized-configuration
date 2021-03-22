@@ -19,9 +19,11 @@ package com.example.configurationservice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
+import springfox.documentation.swagger3.annotation.EnableSwagger3;
 
 @EnableConfigServer
 @SpringBootApplication
+@EnableSwagger3
 public class ConfigurationServiceApplication {
 
 	public static void main(String[] args) {
